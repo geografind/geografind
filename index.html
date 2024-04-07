@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="apple-itunes-app" content="app-id=yourAppStoreID">
+    <title>One Page Website</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            background-color: #1c2932;
+            font-family: Arial, sans-serif;
+            color: #fff;
+        }
+
+        .nav-bar {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 60px;
+            background: linear-gradient(to right, #1c2932, #0f0f0f);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1;
+        }
+
+        .nav-bar a {
+            color: #fff;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .nav-bar img {
+            height: 25px;
+            width: auto;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px;
+            gap: 40px;
+            opacity: 0;
+            transition: opacity 2s;
+        }
+
+        .content img {
+            height: 200px;
+            width: auto;
+            margin-bottom: 10px;
+        }
+
+        .content p {
+            max-width: 500px;
+            text-align: center;
+        }
+
+        #privacy {
+            padding-top: 30px;
+        }
+
+        #privacy ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            color: #fff;
+        }
+
+        #privacy ul li {
+            margin-bottom: 10px;
+        }
+
+        #privacy h2 {
+            font-size: 24px;
+            text-align: center;
+        }
+
+        #privacy h3, #privacy p {
+            font-size: 16px;
+            text-align: left;
+        }
+
+        #privacy hr {
+            margin: 20px 10%;
+            border: none;
+            width: auto;
+            border-top: 1px solid #fff; /* Light grey separator */
+        }
+
+        .show-on-scroll {
+            opacity: 1 !important;
+        }
+
+        #home, #privacy {
+            padding-top: 120px;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-bar">
+        <a href="#home" class="nav-link">
+            <img src="https://wmstatic.global.ssl.fastly.net/ml/7160822-f-43e48540-b1a0-4666-9975-db208afaacfb.png?width=418&height=908" alt="home"> Home
+        </a>
+        <a href="#privacy" class="nav-link">
+            Privacy policy
+        </a>
+        <a href="https://www.your-download-link.com" target="_blank">
+            <img src="https://wmstatic.global.ssl.fastly.net/ml/7160822-f-43e48540-b1a0-4666-9975-db208afaacfb.png?width=418&height=908" alt="download">
+        </a>
+    </div>
+
+    <div id="home" class="content" style="opacity: 1;">
+        <img src="https://wmstatic.global.ssl.fastly.net/ml/7160822-f-43e48540-b1a0-4666-9975-db208afaacfb.png?width=418&height=908" alt="image">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris faucibus elit id nisl hendrerit, id pulvinar orci varius.</p>
+    </div>
+    
+    <div class="content">
+        <img src="https://wmstatic.global.ssl.fastly.net/ml/7160822-f-43e48540-b1a0-4666-9975-db208afaacfb.png?width=418&height=908" alt="image">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris faucibus elit id nisl hendrerit, id pulvinar orci varius.</p>
+    </div>
+
+    <div class="content">
+        <img src="https://wmstatic.global.ssl.fastly.net/ml/7160822-f-43e48540-b1a0-4666-9975-db208afaacfb.png?width=418&height=908" alt="image">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris faucibus elit id nisl hendrerit, id pulvinar orci varius.</p>
+    </div>
+
+    <div class="content">
+        <img src="https://wmstatic.global.ssl.fastly.net/ml/7160822-f-43e48540-b1a0-4666-9975-db208afaacfb.png?width=418&height=908" alt="image">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris faucibus elit id nisl hendrerit, id pulvinar orci varius.</p>
+    </div>
+
+    <div class="content">
+        <img src="https://wmstatic.global.ssl.fastly.net/ml/7160822-f-43e48540-b1a0-4666-9975-db208afaacfb.png?width=418&height=908" alt="image">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris faucibus elit id nisl hendrerit, id pulvinar orci varius.</p>
+    </div>
+
+    <div id="privacy" class="content">
+        <hr>
+        <h2>Privacy Policy</h2>
+        <ul>
+            <li><h3>Introduction</h3><p>This privacy policy (“Policy”) explains how Geografind (“we”, “us” or “our”) handles and protects your privacy when you use Geografind (the “App”), which we offer via the Apple App Store.</p></li>
+            <li><h3>Personal Information</h3><p>We do not collect or process any personal data when you use our App. The App does not request, store, or transmit any personal data.</p></li>
+            <li><h3>Non-personal Information</h3><p>The App does not collect non-personal information.</p></li>
+            <li><h3>Security</h3><p>As the App does not collect or request any personal or non-personal data from users, there is no data stored or transmitted that could be at risk.</p></li>
+            <li><h3>Changes to This Privacy Policy</h3><p>We may update our Privacy Policy from time to time. Thus, you are advised to review this page periodically for any changes. We will notify you of any changes by posting the new Privacy Policy on this page. These changes are effective immediately after they are posted on this page.</p></li>
+            <li><h3>Contact Us</h3><p>If you have any questions or concerns about this Policy, please contact us at findsupport@geografind.com.</p></li>
+        </ul>
+    </div>
+
+    <script>
+        const faders = document.querySelectorAll('.content');
+        const options = {
+            threshold: 0.25
+        };
+
+        const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
+            entries.forEach(entry => {
+                if(!entry.isIntersecting) {
+                    return;
+                } else {
+                    entry.target.classList.add('show-on-scroll');
+                    appearOnScroll.unobserve(entry.target);
+                }
+            });
+        }, options);
+
+        faders.forEach(fader => {
+            appearOnScroll.observe(fader);
+        });
+    </script>
+</body>
+</html>
